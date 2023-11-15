@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.container{
+  max-width: 600px;
+  padding: 4px 10px;
+  min-height: 500px;
+  margin: auto;
+}
+#createTask{
+  min-width: calc(80% - 520px);
+  max-width: 240px;
+  min-height: 30px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  outline: none;
+}
+.allButtons{
+text-align: center;
+}
+button{
+  width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  text-transform: capitalize;
+  margin: 50px auto 10px auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+  
+  color: white;
+  transition: 0.3s;
+}
+#addTaskBtn:hover{
+  background-color: #777;
+}
+#deleteAllTasksBtn:hover{
+  background-color:#ec5d69 ;
+}
+h2{
+  text-align: center;
+}
+.tasksContainer{
+  margin-top: 10px;
+  padding: 4px 0px 4px 10px;
+  border-radius: 4px;
+}
+/* .task{
+
+} */
+.task:not(:first-child){
+  margin-top: 10px;
+}
+i:hover{
+  color:black !important;
+  transition: 0.3s;
+}
+.popUp{
+  /* width: 240px; */
+  min-width: calc(80% - 520px);
+  max-width: 240px;
+  /* height: 240px; */
+  height: 120px;
+  position: absolute;
+  background: rgb(238, 238, 238);
+  border-radius: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 120px;
+  outline: none;
+  border-color: #777;
+}
+.inputPopUp{
+  width: 100% !important;
+  height: 30px !important;
+  outline: none;
+}
+.buttPopUp{
+  width: 120px !important;
+  background-color: #777 !important;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.task {
+  position: relative;
+  margin-bottom: 5px;
+  background-color: #eee;
+  padding: 4px 10px;
+  border-radius: 4px;
+
+}
+.icons{
+  display: flex;
+  justify-content: space-around;
+  width: 40px;
+}
+.fa-solid.fa-trash-can:hover {
+  color: #ec5d69 !important;
+ 
+}
+
+  
